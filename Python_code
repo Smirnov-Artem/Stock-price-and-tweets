@@ -1,4 +1,4 @@
-#Packages for Twitter data processing
+#Packages for Twitter data downloading
 import pandas as pd
 import numpy as np
 from sklearn.cluster import MiniBatchKMeans
@@ -15,6 +15,7 @@ import time
 import datetime
 from datetime import datetime
 
+#Packages for text processing
 import en_core_web_sm
 from nltk.tokenize import RegexpTokenizer, WhitespaceTokenizer
 from nltk.stem import WordNetLemmatizer
@@ -28,7 +29,6 @@ import plotly.graph_objs as go
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import plotly.express as px
-
 import requests
 import os
 import json
@@ -36,6 +36,7 @@ import dateutil.parser
 import unicodedata
 import dateutil.parser
 
+#Modeling using Catboost
 from skforecast.ForecasterAutoreg import ForecasterAutoreg
 from skforecast.ForecasterAutoregMultiOutput import ForecasterAutoregMultiOutput
 from skforecast.model_selection import grid_search_forecaster
